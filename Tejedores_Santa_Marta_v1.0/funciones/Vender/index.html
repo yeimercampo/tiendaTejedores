@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejedores</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
+    
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    
+    <script src="https://kit.fontawesome.com/a12187352c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="seccion">
+            <ul>
+                <li>
+                    <ul class="menu">
+                        
+                        <li>
+                            <a href="">
+                                <div class="profile-dropdown-btn">
+                                    <div class="profile-img">
+                                    </div>
+                                    <span>Perfil
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+                            </a>
+                            <ul class="submenu2">
+                                <li>
+                                    <a clas="enlace_seccion" href="../carrito/index.html">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        Compras</a>
+                                </li>
+                                <li>
+                                    <a clas="enlace_seccion" href="index.html">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                        Vender</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-regular fa-user"></i>
+                                        Editar Perfil
+                                    </a>
+                                </li>
+                                
+                                <li><a href="">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    configuración</a>
+                                </li>
+                                <li><a href="#">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                    Servicio de soporte</a>
+                                </li>
+                                <hr />
+                                <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    Cerrar sesión</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a clas="enlace_seccion" href="../../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a clas="enlace_seccion" href="../RegistroLogin/indexl.html">Registro</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contenido-header">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo De la tienda">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Productos</a>
+                        <ul class="submenu2">
+                            <li><a href="../Productos/Ropa/index.html">Ropa</a></li>
+                            <li><a href="../Productos/Zapatos/index.html">Calzado</a></li>
+                            <li><a href="">Bolsos</a></li>
+                            <li><a href="">Cocina</a></li>
+                            <li><a href="">Baño</a></li>
+                            <li><a href="">Accesorios</a></li>
+                        </ul>
+                    </li>
+        
+                    <li><a href="">Comunidad</a>
+                        <ul class="submenu2">
+                            <li><a href="">Novedades</a></li>
+                            <li><a href="../comunidad/donaciones/index.html">Donacciones</a></li>
+                            <li><a href="../comunidad/intercambiar/index.html">Intercambiar</a></li>
+                        </ul>
+                    </li>
+        
+                    <li>
+                        <a href="../locales/index.html">Locales cercanos</a> 
+                    </li>
+                </ul>
+            </nav>
+            <div class="compra">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>   
+        </div>
+    </header>
+    
+
+    <h2 id="titulo">Agregar Producto</h2>
+    <main>
+        
+       
+        <div class="formulario">
+            <form id="producto-form" enctype="multipart/form-data">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" step="0.01" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" required></textarea>
+
+                <label for="genero">Género:</label>
+                <select id="genero" required>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Unisex">Unisex</option>
+                </select>
+
+                
+
+                <label for="imagen">Imagen del Producto:</label>
+                <!-- Cuadro de vista previa de la imagen -->
+                <div id="imagen-preview" class="imagen-preview">
+                    <img id="preview-image" src="" alt="Vista previa de la imagen">
+                </div>
+                <input type="file" id="imagen" accept="image/*" required>
+                
+                <input type="submit" value="Agregar Producto">
+            </form>
+        </div>
+    </main>
+    
+
+ 
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <img src="img/Logo.png" alt="logo">
+        
+            <p class="footer-links">
+                <a href="../../index.html">Home</a>
+                |
+                <a href="">About</a>
+                |
+                <a href="">Contact</a>
+                |
+                <a href="">Blog</a>
+            </p>
+        
+            <p class="footer-company-name">Copyright © 2021 <strong>TejedoresDeCulturaSantaMarta</strong> All rights reserved</p>
+        </div>
+        
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Santa Marta</span>
+                    Colombia</p>
+            </div>
+        
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+57 321*38**75</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">TculturaSantaMarta@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+            </p>
+            <div class="footer-icons">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>       
+
+    <script src="js/js.js"></script>
+<body> 
+</html>

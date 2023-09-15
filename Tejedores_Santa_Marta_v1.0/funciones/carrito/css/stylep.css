@@ -1,0 +1,10 @@
+
+
+.profile-img {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: url(../img/images.png);
+  background-size: cover;
+}
